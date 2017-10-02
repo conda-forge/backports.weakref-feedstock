@@ -20,8 +20,10 @@ requirements:
     - python
     - setuptools
     - setuptools_scm
+    - backports
   run:
     - python
+    - backports
 
 test:
   imports:
