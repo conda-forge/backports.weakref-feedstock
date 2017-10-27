@@ -9,14 +9,14 @@ Feedstock license: BSD 3-Clause
 
 Summary: Backport of new features in Python's weakref module
 
+This package provides backports of new features in Python's weakref
+module under the backports namespace.
 
 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/backports.weakref-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/backports.weakref-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/backports.weakref-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/backports.weakref-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/backports.weakref-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/backports-weakref-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/backports.weakref-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/backports.weakref-feedstock)
 
 Current release info
 ====================
