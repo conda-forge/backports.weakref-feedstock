@@ -14,14 +14,15 @@ Summary: Backport of new features in Python's weakref module
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/backports.weakref-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/backports.weakref-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/backports.weakref-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/backports.weakref-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/backports.weakref-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/backports-weakref-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/backports.weakref-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/backports.weakref-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/backports.weakref/badges/version.svg)](https://anaconda.org/conda-forge/backports.weakref)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/backports.weakref/badges/downloads.svg)](https://anaconda.org/conda-forge/backports.weakref)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-backports.weakref-green.svg)](https://anaconda.org/conda-forge/backports.weakref) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/backports.weakref.svg)](https://anaconda.org/conda-forge/backports.weakref) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/backports.weakref.svg)](https://anaconda.org/conda-forge/backports.weakref) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/backports.weakref.svg)](https://anaconda.org/conda-forge/backports.weakref) |
 
 Installing backports.weakref
 ============================
