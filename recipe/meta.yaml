@@ -1,28 +1,28 @@
 {% set name = "backports.weakref" %}
 {% set version = "1.0.post1" %}
-{% set sha256 = "bc4170a29915f8b22c9e7c4939701859650f2eb84184aee80da329ac0b9825c2" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/backports.weakref-{{ version }}.tar.gz
+  sha256: bc4170a29915f8b22c9e7c4939701859650f2eb84184aee80da329ac0b9825c2
 
 build:
-  number: 1002
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  number: 1003
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python
-    - setuptools
+  host:
+    - python >=3.6
+    - pip
     - setuptools_scm
     - backports
   run:
-    - python
+    - python >=3.6
     - backports
 
 test:
