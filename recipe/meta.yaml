@@ -7,25 +7,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/backports.weakref-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/backports.weakref-{{ version }}.tar.gz
   sha256: bc4170a29915f8b22c9e7c4939701859650f2eb84184aee80da329ac0b9825c2
 
 build:
   noarch: python
-  number: 1003
+  number: 1004
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools_scm
     - backports
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - backports
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - backports.weakref
 
